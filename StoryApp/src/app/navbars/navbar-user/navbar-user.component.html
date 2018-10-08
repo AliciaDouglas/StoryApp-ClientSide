@@ -1,9 +1,5 @@
-<p>
-  navbar-user works!
-</p>
-<!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" routerLink="">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Inkwell_icon_-_Noun_Project_2512.svg/2000px-Inkwell_icon_-_Noun_Project_2512.svg.png"
       width="30" height="30" class="d-inline-block align-top" alt=""> StoryApp
   </a>
@@ -12,10 +8,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      <a class="nav-item nav-link active" routerLink="">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" routerLink="/login">Login</a>
+      <a class="nav-item nav-link" routerLink="/register">Register</a>
+      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
     </div>
   </div>
 </nav>
