@@ -9,7 +9,7 @@ import { NavbarUserComponent } from './navbars/navbar-user/navbar-user.component
 import { NavbarComponent } from './navbars/navbar/navbar.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { Material } from './material';
 
 
 
@@ -27,7 +27,7 @@ import {MatMenuModule} from '@angular/material/menu';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    Material
   ],
   providers: [],
   bootstrap: [AppComponent]
