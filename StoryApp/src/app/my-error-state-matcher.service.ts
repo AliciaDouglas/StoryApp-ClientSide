@@ -5,7 +5,7 @@ import { FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 @Injectable({
   providedIn: 'root'
 })
-export class MyErrorStateMatcherService implements ErrorStateMatcher{
+export class MyErrorStateMatcherService implements ErrorStateMatcher {
   isErrorState(control: FormControl | null,
   form: FormGroupDirective | NgForm | null):
   boolean {
