@@ -4,22 +4,30 @@
 <form class="register-form">
   <mat-form-field class="form-input">
     <input matInput [formControl]="fnameFormControl" [errorStateMatcher]="matcher" placeholder="First Name">
-    <mat-error *ngIf="fnameFormControl.hasError ('required')">First name is <strong>required</strong></mat-error>
+    <mat-error *ngIf="fnameFormControl.hasError ('required')">First name is
+      <strong>required</strong>
+    </mat-error>
     <mat-error *ngIf="fnameFormControl.hasError && !fnameFormControl.hasError ('required')">First name has to be between 3 and 15 charcters long</mat-error>
   </mat-form-field>
   <mat-form-field class="form-input">
     <input matInput [formControl]="lnameFormControl" [errorStateMatcher]="matcher" placeholder="Last Name">
-    <mat-error *ngIf="lnameFormControl.hasError ('required')">Last name is <strong>required</strong></mat-error>
+    <mat-error *ngIf="lnameFormControl.hasError ('required')">Last name is
+      <strong>required</strong>
+    </mat-error>
     <mat-error *ngIf="lnameFormControl.hasError && !lnameFormControl.hasError ('required')">Last name has to be between 3 and 15 charcters long</mat-error>
   </mat-form-field>
   <mat-form-field class="form-input">
     <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" type="email" placeholder="Email">
     <mat-error *ngIf="emailFormControl.hasError ('email') && !emailFormControl.hasError ('required')">Please enter a valid email address</mat-error>
-    <mat-error *ngIf="emailFormControl.hasError ('required')">Email is <strong>required</strong></mat-error>
+    <mat-error *ngIf="emailFormControl.hasError ('required')">Email is
+      <strong>required</strong>
+    </mat-error>
   </mat-form-field>
   <mat-form-field class="form-input">
     <input matInput [formControl]="usernameFormControl" [errorStateMatcher]="matcher" placeholder="Username">
-    <mat-error *ngIf="usernameFormControl.hasError ('required')">Username is <strong>required</strong></mat-error>
+    <mat-error *ngIf="usernameFormControl.hasError ('required')">Username is
+      <strong>required</strong>
+    </mat-error>
     <mat-error *ngIf="usernameFormControl.hasError && !usernameFormControl.hasError ('required')">Username has to be between 5 and 15 charcters long</mat-error>
   </mat-form-field>
   <mat-form-field class="form-input">
