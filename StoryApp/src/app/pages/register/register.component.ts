@@ -1,6 +1,5 @@
 import { FormControl, Validators, FormGroupDirective, NgForm } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-// import { MyErrorStateMatcherService } from './../../my-error-state-matcher.service';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -23,13 +22,33 @@ export class MyErrorStateMatcherService implements ErrorStateMatcher {
 })
 export class RegisterComponent implements OnInit {
 
-  // emailFormControl;
-  // matcher;
-
+  // Email validation
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
   ]);
+
+  // First name validation
+  fnameFormControl = new FormControl ('', [
+    Validators.maxLength(15),
+    Validators.minLength(3),
+    Validators.required
+  ]);
+
+  // Last name validation
+  lnameFormControl = new FormControl ('', [
+    Validators.maxLength(15),
+    Validators.minLength(3),
+    Validators.required
+  ]);
+
+  // Username validation
+  usernameFormControl = new FormControl ('', [
+    Validators.maxLength(15),
+    Validators.minLength(5),
+    Validators.required
+  ]);
+
   matcher = new MyErrorStateMatcherService();
 
   constructor() { }
@@ -37,13 +56,5 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  // emailErrorMessage () {
-  // emailFormControl = new FormControl ('', [
-  //     Validators.required,
-  //     Validators.email,
-  //   ]);
-  // matcher = new MyErrorStateMatcherService();
-  // }
 
 }
