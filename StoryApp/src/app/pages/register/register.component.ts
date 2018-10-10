@@ -49,6 +49,13 @@ export class RegisterComponent implements OnInit {
     Validators.required
   ]);
 
+  // Password validation
+  passwordFormControl = new FormControl ('', [
+    Validators.maxLength(15),
+    Validators.minLength(8),
+    Validators.required
+  ]);
+
   matcher = new MyErrorStateMatcherService();
 
   constructor() { }
