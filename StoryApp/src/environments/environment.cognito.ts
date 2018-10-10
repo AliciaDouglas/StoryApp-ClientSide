@@ -1,5 +1,9 @@
 // Cognito variables
 
 export const environment = {
-    production: false
+    production: false,
+    envName : 'cognito',
+    userPoolId : '',
+    clientId : '',
+    username : ''
 };
